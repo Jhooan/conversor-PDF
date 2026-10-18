@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Conversor</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="bar">
+            PDF Conversor
+        </div>
+    </header>
+
+    <main>
+        <h1 id="title"></h1>
+        <p class="subtitle" id="subtitle"></p>
+
+        <div class="selector" role="tablist" id="selector"></div>
+
+        <div class="card">
+            <div class="drop" id="drop" tabindex="0" role="button">
+                <b id="droparchive">Selecciona archivos</b>
+                <span>o arrastralos aquí</span>
+            </div>
+            <input type="file" id="input" hidden>
+
+            <ul id="list"></ul>
+            <div class="options" id="options"></div>
+
+            <div class="prog" id="prog" hidden><i></i></div>
+            <div class="error" id="error" role="alert"></div>
+
+            <div class="action">
+                <button class="btn" id="go" disabled></button>
+            </div>
+            <div id="res"></div>
+        </div>
+
+        <p class="foot">
+            Todo se procesa en tu dispositivo, tus archivos nunca se suben a ningún servidor.
+        </p>
+    </main>
+
+    <script src="vendor/pdf-lib.min.js"></script>
+    <script src="vendor/pdf.min.js"></script>
+    <script src="vendor/jszip.min.js"></script>
+    <script src="vendor/mammoth.browser.min.js"></script>
+    <script src="vendor/xlsx.full.min.js"></script>
+    <script src="vendor/html2pdf.bundle.min.js"></script>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
