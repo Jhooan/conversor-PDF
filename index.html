@@ -9,30 +9,31 @@
 <body>
     <header>
         <div class="bar">
+            <div class="logo">PDF</div>
             PDF Conversor
         </div>
     </header>
 
     <main>
-        <h1 id="title"></h1>
-        <p class="subtitle" id="subtitle"></p>
+        <h1 id="t"></h1>
+        <p class="sub" id="s"></p>
 
-        <div class="selector" role="tablist" id="selector"></div>
+        <div class="seg" role="tablist" id="seg"></div>
 
         <div class="card">
             <div class="drop" id="drop" tabindex="0" role="button">
-                <b id="droparchive">Selecciona archivos</b>
+                <b id="dt">Selecciona archivos</b>
                 <span>o arrastralos aquí</span>
             </div>
-            <input type="file" id="input" hidden>
+            <input type="file" id="inp" hidden>
 
             <ul id="list"></ul>
-            <div class="options" id="options"></div>
+            <div class="opts" id="opts"></div>
 
             <div class="prog" id="prog" hidden><i></i></div>
-            <div class="error" id="error" role="alert"></div>
+            <div class="err" id="err" role="alert"></div>
 
-            <div class="action">
+            <div class="act">
                 <button class="btn" id="go" disabled></button>
             </div>
             <div id="res"></div>
